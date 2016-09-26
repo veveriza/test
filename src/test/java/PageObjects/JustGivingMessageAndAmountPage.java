@@ -1,6 +1,7 @@
 package PageObjects;
 
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -41,12 +42,12 @@ public class JustGivingMessageAndAmountPage extends JustGivingPage<JustGivingMes
         return new JustGivingMessageAndAmountPage().openPage(JustGivingMessageAndAmountPage.class);
     }
 
-    public void leaveMessage(String keys) {
-        leaveAMessage.sendKeys(keys);
+    public void leaveMessage() {
+        leaveAMessage.sendKeys(RandomStringUtils.randomAlphanumeric(20));
     }
 
-    public void enterYourName(String keys) {
-        yourName.sendKeys(keys);
+    public void enterYourName() {
+        yourName.sendKeys(RandomStringUtils.randomAlphanumeric(20));
     }
 
     public JustGivingIdentity clickContinue() {

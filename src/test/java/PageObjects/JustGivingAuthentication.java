@@ -1,22 +1,22 @@
 package PageObjects;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import utils.MockDataGenerator;
 
-public class JustGivingIdentity extends JustGivingPage<JustGivingIdentity>{
+public class JustGivingAuthentication extends JustGivingPage<JustGivingAuthentication> {
 
 
-    @FindBy(id = "Identity-fieldset")
+    @FindBy(id = "Authentication-fieldset")
     WebElement fieldSet;
 
     @FindBy(xpath = "//a[contains(@class,'awesome-continue-button ')]")
     WebElement continueButton;
 
-    @FindBy(id = "Identity_EmailAddress")
-    WebElement emailAddress;
+    @FindBy(id = "Authentication_Password")
+    WebElement password;
 
     @Override
     protected ExpectedCondition getPageLoadCondition() {
@@ -25,7 +25,6 @@ public class JustGivingIdentity extends JustGivingPage<JustGivingIdentity>{
 
     @Override
     public String getPageUrl() {
-//        return "4w350m3/donation/direct/charity/2050#Identity";
         return "";
     }
 
@@ -35,14 +34,14 @@ public class JustGivingIdentity extends JustGivingPage<JustGivingIdentity>{
         button.click();
     }
 
-    public void enterEmailAddress(){
-        emailAddress.sendKeys(MockDataGenerator.emailGenerator());
+    public void enterPassword() {
+        password.sendKeys(RandomStringUtils.randomAlphanumeric(8));
     }
 
-    public JustGivingAuthentication clickContinue() {
+    public JustGivingPaymentMethod clickContinue() {
         clickButton(continueButton);
-        JustGivingAuthentication justGivingAuthentication = new JustGivingAuthentication();
-        justGivingAuthentication.waitForPageToLoad(getPageLoadCondition());
-        return justGivingAuthentication;
+        JustGivingPaymentMethod justGivingPaymentMethod = new JustGivingPaymentMethod();
+        justGivingPaymentMethod.waitForPageToLoad(getPageLoadCondition());
+        return justGivingPaymentMethod;
     }
 }
