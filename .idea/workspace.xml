@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03a015dd-07a3-4f83-868a-1d06d4a4f85c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/JustGivingAuthentication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/JustGivingPaymentMethod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/JustGivingIdentity.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/JustGivingIdentity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/JustGivingMessageAndAmountPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/JustGivingMessageAndAmountPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utils/MockDataGenerator.java" afterPath="$PROJECT_DIR$/src/test/java/utils/MockDataGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Test/SampleTest.java" afterPath="$PROJECT_DIR$/src/test/java/Test/SampleTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="selenium-test.iws" />
@@ -739,12 +732,19 @@
       <workItem from="1474823401154" duration="239000" />
       <workItem from="1474823761523" duration="61000" />
       <workItem from="1474824087963" duration="8741000" />
-      <workItem from="1474897142337" duration="3721000" />
+      <workItem from="1474897142337" duration="3748000" />
     </task>
+    <task id="LOCAL-00001" summary="some more pages">
+      <created>1474908856566</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1474908856566</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17254000" />
+    <option name="totallyTimeSpent" value="17281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
@@ -788,6 +788,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some more pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="some more pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
